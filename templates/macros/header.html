@@ -1,0 +1,19 @@
+{% macro header(current_section) %}
+<header class="mb-auto">
+    <div class="mb-0 px-5">
+        <div class="float-md-start">
+            <a class="nav-link" href="{{ config.base_url | safe }}">
+                <h3>Meili</h3>
+            </a>
+        </div>
+        <nav class="nav nav-masthead justify-content-center float-md-end">
+            {% if config.extra.menu.main %}
+            {% for val in config.extra.menu.main %}
+            <a class="nav-link fw-bold py-1 px-0{% if current_section == val.section %} {{ current_section }} active{% endif %}"
+                href="{{ get_url(path=val.url, trailing_slash=true) | safe }}" aria-current="page">{{ val.name }}</a>
+            {% endfor %}
+            {% endif %}
+        </nav>
+    </div>
+</header>
+{% endmacro %}

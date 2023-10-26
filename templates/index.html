@@ -1,0 +1,28 @@
+{% extends "section.html" %}
+
+{% block header %}
+{# This value is matched by the config.extra.menu.main~section #}
+{% set current_section = "index" %}
+{{ macros_header::header(current_section=current_section)}}
+{% endblock header %}
+
+{% block content %}
+<main class="px-3">
+  <section class="section">
+    <div>
+      <video autoplay muted loop playsinline id="main_video">
+        {% set url = get_url(path="videos/spring.mp4") %}
+        <source src="{{url}}" type="video/mp4">
+      </video>
+
+      {% set image = get_url(path="images/Meili-logo.svg") %}
+      <img src="{{ image }}" />
+
+      <h1>Meili little things</h1>
+      <p class="lead">
+        This website is under construction.
+      </p>
+    </div>
+  </section>
+</main>
+{% endblock content %}

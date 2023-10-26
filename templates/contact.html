@@ -1,0 +1,18 @@
+{% extends "section.html" %}
+
+{% block header %}
+  {# This value is matched by the config.extra.menu.main~section #}
+  {% set current_section = "contact" %}
+  {{ macros_header::header(current_section=current_section)}}
+{% endblock header %}
+
+{% block content %}
+  <main class="px-3">
+    <section class="section">
+      <div>
+        <h1>hello.meili.as@gmail.com</h1>
+        <h1>instagram: meili.ting</h1>
+      </div>
+    </section>
+  </main>
+{% endblock content %}

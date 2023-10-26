@@ -1,0 +1,9 @@
+{% macro footer() %}
+<footer class="mt-auto text-white-50">
+    {% if config.extra.footer.info %}
+    <p class="list-inline-item text-dark">{{ config.extra.footer.info | default(value="Powered by Secmetrics AS") | safe }}</p>
+    {% else %}
+    <p>Powered by <a href="https://secmetrics.no/" class="text-dark">Secmetrics AS</a></p>
+    {% endif %}
+</footer>
+{% endmacro %}
