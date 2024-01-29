@@ -15,8 +15,8 @@
     font-family: "Avenir Next", sans-serif;
     font-size: 14px;
     transition: all 0.2s;
-  
-    .meili-home-page {
+
+    .meili-header {
       .meili-ad {
         height: 36px;
         width: 100%;
@@ -25,7 +25,7 @@
         font-size: 12px;
         font-weight: 500;
       }
-  
+      
       .meili-header-container {
         position: relative;
         flex-direction: row;
@@ -57,7 +57,9 @@
           text-decoration: underline;
         }
       }
+    }
   
+    .meili-home-page {
       .carousel-item {
         max-height: 80vh;
   
