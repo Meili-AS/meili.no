@@ -1,7 +1,7 @@
 # The URL the site will be built for
 base_url = "https://meili.no"
 title = "Meili little things"
-description = "Meili little things" 
+description = "Meili little things"
 
 # The site theme to use.
 # theme = "none"
@@ -14,14 +14,14 @@ default_language = "en"
 compile_sass = true
 
 # Whether to generate a feed file for the site
-generate_feed = true
+generate_feeds = true
 
 # When set to "true", the generated HTML files are minified.
 minify_html = false
 
 # The taxonomies to be rendered for the site and their configuration.
 taxonomies = [
-  {name = "authors"}, # Basic definition: no feed or pagination
+  { name = "authors" }, # Basic definition: no feed or pagination
 ]
 
 # Whether to build a search index to be used later on by a JavaScript library
@@ -60,7 +60,7 @@ language_code = "en-US"
 theme_color = "#fff"
 
 # More about site's title
-title_separator = "|"  # set as |, -, _, etc
+title_separator = "|"                  # set as |, -, _, etc
 title_addition = "Meili little things"
 
 # Set date format in blog publish metadata
@@ -76,7 +76,7 @@ repo_branch = "main"
 # options: true, false. Enable math support globally,
 # default: false. You can always enable math on a per page.
 math = false
-library = "katex"  # options: "katex", "mathjax". default is "katex".
+library = "katex" # options: "katex", "mathjax". default is "katex".
 
 #Google analytics
 ganalytics = "G-MVPB4J862R"
@@ -99,7 +99,7 @@ logo = "meili_100.png"
 twitter = "https://twitter.com/Meili-AS"
 linked_in = ""
 github = "https://github.com/Meili-AS"
-section = "services" # see config.extra.main~url
+section = "services"                     # see config.extra.main~url
 ## Sitelinks Search Box
 site_links_search_box = true
 
@@ -116,6 +116,12 @@ name = "Contact"
 section = "contact"
 url = "/contact/"
 weight = 20
+
+[[extra.menu.main]]
+name = "Terms"
+section = "terms"
+url = "/terms/"
+weight = 30
 
 [[extra.menu.social]]
 name = "Twitter"

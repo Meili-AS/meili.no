@@ -1,0 +1,107 @@
+{% extends "section.html" %}
+
+{% block header %}
+{# This value is matched by the config.extra.menu.main~section #}
+{% set current_section = "terms" %}
+{{ macros_header::header(current_section=current_section)}}
+{% endblock header %}
+
+{% block content %}
+<main class="px-3">
+    <section class="section">
+        <div>
+            <h1>Terms of Sale for Meili AS</h1>
+            <h6>Last Updated: 2025-01-01</h6>
+
+            <h4>1. Parties</h4>
+            <p>These Terms of Sale govern the contractual relationship between:
+
+                Seller: Meili AS, a company registered in Norway with organization number 931691163, located at
+                Hunnsvegen 3, 2821 Gjøvik, Norway.
+
+                Customer: Any individual or entity placing an order via https://meili.no.
+                By placing an order, the Customer confirms they are at least 18 years old and agree to these Terms.</p>
+
+            <h4>2. Payment</h4>
+            <p>
+                Accepted Methods: Credit/debit cards, bank transfers, or other payment options displayed at checkout.
+
+                Currency: All transactions are processed in NOK (Norwegian Krone).
+
+                Timing: Full payment is required before order processing. For failed payments, orders will be canceled.
+
+                Security: Payments are processed securely via encrypted channels. Meili AS does not store payment
+                details.
+
+                Fees: The Customer bears any bank or currency conversion fees.
+            </p>
+
+            <h4>3. Delivery</h4>
+
+            <p>
+                Scope: Delivery is limited to Norway unless otherwise agreed.
+
+                Methods: Products are shipped via trusted carriers. Tracking information is provided upon dispatch.
+
+                Timeframe: Estimated delivery times are provided but not guaranteed. Delays due to unforeseen
+                circumstances
+                (e.g., logistics issues) do not entitle the Customer to compensation.
+
+                Risk: Responsibility for products transfers to the Customer upon delivery.
+            </p>
+
+            <h4>4. Right of Withdrawal</h4>
+
+            <p>
+                14-Day Cancellation: Customers have 14 days from receipt to cancel orders for any reason, excluding
+                perishable or custom-made items.
+
+                Process: Notify Meili AS via email (hello@meili.no) or the withdrawal form on the website. Return
+                products unused, in original packaging.
+
+                Refund: Issued within 14 days of receiving returned goods, minus return shipping costs (unless the
+                product is faulty).
+            </p>
+
+            <h4>5. Return of Defective Products</h4>
+
+            <p>
+                Faulty Items: Customers may return defective products within 2 years of purchase under Norwegian
+                consumer law.
+
+                Process: Contact Meili AS within a reasonable time to request a repair, replacement, or refund. Return
+                shipping costs for defective items are covered by Meili AS.
+            </p>
+
+            <h4>6. Complaints Handling</h4>
+
+            <p>Submission: Complaints must be sent to hello@meili.no within 2 years of purchase, including order details
+                and
+                a description of the issue.
+
+                Resolution: Meili AS will respond within 14 business days and resolve complaints as quickly as possible,
+                in
+                compliance with Norwegian consumer law.
+            </p>
+
+            <h4>7. Conflict Resolution</h4>
+            <p>
+                Governing Law: Disputes are subject to Norwegian law.
+
+                Venue: Legal proceedings must be initiated in the Norwegian courts where Meili AS is registered.
+
+                Alternative Dispute Resolution (ADR): The Customer may refer disputes to the Norwegian Consumer Council
+                (Forbrukerrådet) or the European Consumer Centre. For online disputes, use the EU ODR platform (here).
+            </p>
+
+            <h5>Contact Information</h5>
+            <h6>Meili AS</h6>
+            <h6>Hunnsvegen 3, 2821 Gjøvik</h6>
+            <h6>Email: hello@meili.no</h6>
+
+            <h6>By placing an order, the Customer acknowledges they have read and agree to these Terms of Sale.</h6>
+
+        </div>
+    </section>
+</main>
+{% endblock content %}
